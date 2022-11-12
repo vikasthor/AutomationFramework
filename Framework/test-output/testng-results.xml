@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting up Testing and Test is ready]]>
+    </line>
+    <line>
+      <![CDATA[Setting up Browser and Test is ready]]>
+    </line>
+    <line>
+      <![CDATA[Browser loading and Testing started]]>
+    </line>
+    <line>
+      <![CDATA[Test about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test completed>>>>> Reoprt is Generated]]>
+    </line>
+    <line>
+      <![CDATA[Test about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test completed>>>>> Reoprt is Generated]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-11-12T13:54:52 IST" name="Suite" finished-at="2022-11-12T13:55:53 IST" duration-ms="60191">
+    <groups>
+    </groups>
+    <test started-at="2022-11-12T13:54:52 IST" name="Test" finished-at="2022-11-12T13:55:53 IST" duration-ms="60191">
+      <class name="TestCases.LoginTestCRM">
+        <test-method is-config="true" signature="setupSuit()[pri:0, instance:TestCases.LoginTestCRM@f736069]" started-at="2022-11-12T13:54:51 IST" name="setupSuit" finished-at="2022-11-12T13:54:52 IST" duration-ms="1362" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up Testing and Test is ready]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setupSuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.LoginTestCRM@f736069]" started-at="2022-11-12T13:54:52 IST" name="setup" finished-at="2022-11-12T13:55:20 IST" duration-ms="27536" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up Browser and Test is ready]]>
+            </line>
+            <line>
+              <![CDATA[Browser loading and Testing started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginApp()[pri:1, instance:TestCases.LoginTestCRM@f736069]" started-at="2022-11-12T13:55:20 IST" name="loginApp" finished-at="2022-11-12T13:55:50 IST" duration-ms="30421" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='password3']"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-MB50M7DV', ip: '192.168.114.172', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\thora\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59282}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d35d9d9774abc9c7c1ac386a2d7161d6
+*** Element info: {Using=xpath, value=//input[@name='password3']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='password3']"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-MB50M7DV', ip: '192.168.114.172', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\thora\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59282}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d35d9d9774abc9c7c1ac386a2d7161d6
+*** Element info: {Using=xpath, value=//input[@name='password3']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+at PageObjectModel.LoginPage.logintoCRM(LoginPage.java:28)
+at TestCases.LoginTestCRM.loginApp(LoginTestCRM.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="closedMethod(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTestCRM@f736069]" started-at="2022-11-12T13:55:50 IST" name="closedMethod" finished-at="2022-11-12T13:55:52 IST" duration-ms="1115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=FAILURE method=LoginTestCRM.loginApp()[pri:1, instance:TestCases.LoginTestCRM@f736069] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test completed>>>>> Reoprt is Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closedMethod -->
+        <test-method signature="logout()[pri:2, instance:TestCases.LoginTestCRM@f736069]" started-at="2022-11-12T13:55:52 IST" name="logout" finished-at="2022-11-12T13:55:52 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closedMethod(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTestCRM@f736069]" started-at="2022-11-12T13:55:52 IST" name="closedMethod" finished-at="2022-11-12T13:55:52 IST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=LoginTestCRM.logout()[pri:2, instance:TestCases.LoginTestCRM@f736069] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test completed>>>>> Reoprt is Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closedMethod -->
+        <test-method is-config="true" signature="ClosedBrowser()[pri:0, instance:TestCases.LoginTestCRM@f736069]" started-at="2022-11-12T13:55:52 IST" name="ClosedBrowser" finished-at="2022-11-12T13:55:53 IST" duration-ms="739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosedBrowser -->
+      </class> <!-- TestCases.LoginTestCRM -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
