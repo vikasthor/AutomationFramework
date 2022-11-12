@@ -3,6 +3,7 @@ package PageObjectModel;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -32,6 +33,7 @@ public class BaseClass {
 	@BeforeSuite
 	public void setupSuit()
 	{
+		System.out.println("Testing Environment setup OK");
 		Reporter.log("Setting up Testing and Test is ready" , true);
 		excel = new ExcelDataProvider();
 		config = new ConfigDataProvider ();
@@ -74,5 +76,6 @@ public class BaseClass {
 		report.flush();
 		
 		Reporter.log("Test completed>>>>> Reoprt is Generated" , true);
+		System.out.println("Testing Done ");
 	}
 }
